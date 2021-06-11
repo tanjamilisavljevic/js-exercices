@@ -10,7 +10,10 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
 
 })();
+function changeColor() {
+    const color = document.getElementById("color").value;
+    document.body.style.background = color;
+}

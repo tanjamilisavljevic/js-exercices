@@ -12,5 +12,18 @@
 (function() {
 
     // your code here
+    })();
 
-})();
+function changeBackgroundBlue() {
+    document.body.style.background = "blue";
+}
+function changeBackgroundRed() {
+    document.body.style.background = "red";
+}
+function changeBackgroundGreen() {
+    document.body.style.background = "green";
+}
+function changeBackgroundYellow() {
+    document.body.style.background = "yellow";
+}
+
