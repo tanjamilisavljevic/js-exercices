@@ -7,6 +7,20 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
         <link rel="stylesheet" href="../../_shared/css/normalize.css" />
         <link rel="stylesheet" href="../../_shared/css/styles.css" />
+        <script>
+            function changeBackgroundRed() {
+                document.body.style.background = "red";
+            }
+            function changeBackgroundGreen() {
+                document.body.style.background = "green";
+            }
+            function changeBackgroundYellow() {
+                document.body.style.background = "yellow";
+            }
+            function changeBackgroundBlue() {
+                document.body.style.background = "blue";
+            }
+        </script>
     </head>
     <body>
         <div class="container">
@@ -22,10 +36,10 @@
                 </section>
                 <section class="material">
                     <div class="actions">
-                        <button type="button" id="red">Red</button>
-                        <button type="button" id="green">Green</button>
-                        <button type="button" id="yellow">Yellow</button>
-                        <button type="button" id="blue">Blue</button>
+                        <button type="button" id="red" onclick="changeBackgroundRed();"> Red </button>
+                        <button type="button" id="green" onclick="changeBackgroundGreen();" > Green </button>
+                        <button type="button" id="yellow" onclick="changeBackgroundYellow();" > Yellow </button>
+                        <button type="button" id="blue" onclick="changeBackgroundBlue();" > Blue </button>
                     </div>
                 </section>
             </div>
