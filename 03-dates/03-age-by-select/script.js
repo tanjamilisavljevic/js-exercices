@@ -14,3 +14,20 @@
     // your code here
 
 })();
+
+function getAge() {
+    let today = new Date(2021, 6, 14, 12);
+    let birthDate = new Date(document.getElementById('dob-year').value, document.getElementById('dob-month').value,document.getElementById('dob-day').value);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    let months = today.getMonth() - birthDate.getMonth();
+    if (months < 0 || (months === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+document.getElementById('run').onclick = () => {
+    let age;
+    age = getAge();
+  document.write(age);
+}
