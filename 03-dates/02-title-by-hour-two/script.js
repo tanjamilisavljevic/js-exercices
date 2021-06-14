@@ -16,3 +16,17 @@
     // your code here
 
 })();
+
+let d1730 = new Date(2021, 6, 14, 17, 30, 0, 0); // today 17:30:00:000
+ let   currentDate = new Date(2021, 6, 14, 2, 0 );
+ t1730 = d1730.getTime();
+ currentTime = currentDate.getTime();
+
+function checkHour() {
+    if (t1730 > currentTime ) {
+        document.getElementById('target').innerHTML = 'Hello';
+    } else {
+        document.getElementById('target').innerHTML = 'Good evening';
+    }
+}
+checkHour()
