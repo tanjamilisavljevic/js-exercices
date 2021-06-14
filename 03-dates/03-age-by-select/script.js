@@ -27,7 +27,6 @@ function getAge() {
 }
 
 document.getElementById('run').onclick = () => {
-    let age;
-    age = getAge();
+    let age = getAge();
   document.write(age);
 }
