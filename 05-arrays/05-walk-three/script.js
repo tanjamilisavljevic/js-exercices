@@ -42,10 +42,9 @@
     document.getElementById('run').onclick = function () {
 
         people.forEach(function (person) {
-            const name = person.firstname + person.lastname;
+            const name = person.firstname + ' ' + person.lastname;
             console.log(name)
         })
-
 
     }
 

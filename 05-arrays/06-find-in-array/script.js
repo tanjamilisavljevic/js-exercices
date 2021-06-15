@@ -9,7 +9,6 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
     var people = [
         {
@@ -91,4 +90,17 @@
 
     // your code here
 
-})();
+    document.getElementById('run').onclick = function () {
+
+
+
+        const Dupont = people.find(function (person) {
+            return person.firstname === 'Jean' && person.lastname === 'Dupont';
+        })
+
+        console.log(Dupont.email)
+1
+    }
+
+
+
