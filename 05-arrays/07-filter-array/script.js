@@ -90,6 +90,8 @@
     ];
 
     // your code here
-    const adultPeople = people.filter(person => person.age >= 18)
-    console.log(adultPeople)
+    document.getElementById('run').onclick = function () {
+        const adultPeople = people.filter(person => person.age >= 18)
+        console.log(adultPeople)
+    }
 })();

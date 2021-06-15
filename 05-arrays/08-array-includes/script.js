@@ -27,5 +27,15 @@
     ];
 
     // your code here
+    document.getElementById('run').onclick = function () {
 
+        function appleInFruits() {
+            if (fruits.includes("apple"))
+            {console.log('Yes')}
+            else
+            {console.log('No')}
+        }
+
+        appleInFruits();
+    }
 })();
