@@ -90,5 +90,6 @@
     ];
 
     // your code here
-
+    const adultPeople = people.filter(person => person.age >= 18)
+    console.log(adultPeople)
 })();
