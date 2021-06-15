@@ -12,7 +12,7 @@
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function(operation) {
+    const performOperation = function(operation) {
         // perform the operation
     };
 
