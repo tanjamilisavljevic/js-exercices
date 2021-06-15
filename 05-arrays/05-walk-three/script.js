@@ -9,9 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Garald",
             lastname: "Freschi",
@@ -40,5 +39,15 @@
     ];
 
     // your code here
+    document.getElementById('run').onclick = function () {
 
-})();
+        people.forEach(function (person) {
+            const name = person.firstname + person.lastname;
+            console.log(name)
+        })
+
+
+    }
+
+
+

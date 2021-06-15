@@ -31,7 +31,6 @@ document.getElementById('run').onclick = () => {
     fruits.forEach(function (fruit) {
         console.log(fruit)
     })
-
 }
 
 })();
