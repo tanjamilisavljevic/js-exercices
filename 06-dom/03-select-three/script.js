@@ -11,6 +11,11 @@
 
 (function() {
 
-    // your code here
+
+    let targetArray = document.querySelectorAll(".target");
+    let i;
+    for (i = 0; i < targetArray.length; i++) {
+        targetArray[i].innerHTML = "owned";
+    }
 
 })();
