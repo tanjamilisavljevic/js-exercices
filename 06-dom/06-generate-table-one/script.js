@@ -9,8 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    function addTable() {
+
+        let myTable;
+        myTable = document.createElement('table');
+        for (let i = 0; i < 10; i++) {
+            let myRow = myTable.insertRow(i);
+            myRow.insertCell()
+        }
+
+        document.getElementById("target").appendChild(myTable);
+    }
+
+    addTable();
 
 })();
