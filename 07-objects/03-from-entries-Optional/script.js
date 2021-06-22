@@ -12,5 +12,22 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+
+
+
+    document.getElementById('run').addEventListener('click', function () {
+
+        const keyValuePairs = new Array();
+        // const keyValuePairs = [];
+
+        for (let i=0; i<keys.length; i++){
+            let key = keys[i];
+            let value =values[i];
+            let keyValuePair = [key, value];
+            keyValuePairs.push(keyValuePair);
+        }
+        const Cat = Object.fromEntries(keyValuePairs);
+        console.log(Cat)
+    })
+
 })();
