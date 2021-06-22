@@ -11,6 +11,19 @@
 
 (function() {
 
-    // your code here
+
+    const inputElement = document.querySelector('#pass-one');
+
+    inputElement.addEventListener('input', (event) => {
+        const counter = document.querySelector('#counter');
+        const input = event.target;
+        if (input.value.length>10) {
+        input.value = input.value.slice(0,10);
+        }
+        counter.textContent = `${input.value.length}/10`;
+
+    });
+
+
 
 })();
