@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+    function changeText() {
+        document.querySelector(".material p").innerHTML = 'owned';
+    };
+    changeText();
+
 
 })();
