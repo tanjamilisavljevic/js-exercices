@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+
+
+    function replaceImg() {
+        const source = document.getElementById('source')
+        const img = document.createElement('img');
+        img.src = source.getAttribute('data-image');
+        document.getElementById('target').appendChild(img);
+        source.remove();
+    }
+
+    replaceImg();
 
 })();
