@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -89,6 +89,17 @@
         },
     ];
 
-    // your code here
+    document.getElementById('run').onclick = function () {
+        const allAges = new Array();
+
+        people.forEach(function (person) {
+          allAges.push(person.age);
+        })
+        console.log(allAges.reduce(getSum,0));
+
+        function getSum(total, num) {
+            return total + num;
+        }
+    }
 
 })();
