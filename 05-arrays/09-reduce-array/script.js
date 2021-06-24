@@ -88,18 +88,16 @@
             age: 81,
         },
     ];
-
     document.getElementById('run').onclick = function () {
-        const allAges = new Array();
 
-        people.forEach(function (person) {
-          allAges.push(person.age);
+        const allAges = people.map(function (person) {
+            return person.age
         })
-        console.log(allAges.reduce(getSum,0));
-
+        console.log(allAges.reduce(getSum, 0));
         function getSum(total, num) {
             return total + num;
         }
+
     }
 
 })();
