@@ -9,24 +9,45 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
 
 })();
 
 function getAge() {
-    let today = new Date(2021, 6, 14, 12);
-    let birthDate = new Date(document.getElementById('dob-year').value, document.getElementById('dob-month').value,document.getElementById('dob-day').value);
+    const today = new Date(2021, 7, 1, 11);
+    let birthDate = new Date(document.getElementById("dob-year").value,document.getElementById("dob-month").value, document.getElementById("dob-day").value);
     let age = today.getFullYear() - birthDate.getFullYear();
-    let months = today.getMonth() - birthDate.getMonth();
-    if (months < 0 || (months === 0 && today.getDate() < birthDate.getDate())) {
+    console.log(age);
+    const month = today.getMonth() - birthDate.getMonth();
+    console.log(month);
+    if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
     return age;
 }
 
-document.getElementById('run').onclick = () => {
+document.getElementById("run").onclick = () => {
     let age = getAge();
-  document.write(age);
+    alert(age)
 }
+
+
+
+
+// function getAge() {
+//     let today = new Date(2021, 6, 14, 12);
+//     let birthDate = new Date(document.getElementById('dob-year').value, document.getElementById('dob-month').value,document.getElementById('dob-day').value);
+//     let age = today.getFullYear() - birthDate.getFullYear();
+//     let months = today.getMonth() - birthDate.getMonth();
+//     if (months < 0 || (months === 0 && today.getDate() < birthDate.getDate())) {
+//         age--;
+//     }
+//     return age;
+// }
+//
+// document.getElementById('run').onclick = () => {
+//     let age = getAge();
+//   document.write(age);
+// }
