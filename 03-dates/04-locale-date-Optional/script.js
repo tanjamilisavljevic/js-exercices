@@ -9,10 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
     // your code here
+function getDateTime () {
+    const currentdate = new Date();
+    const dayOptions = { weekday: 'long'};
+    const whichDay = (new Intl.DateTimeFormat('en-US', dayOptions).format(currentdate));
+    const options = {month: 'long'};
+    const whichMonth = (new Intl.DateTimeFormat('en-US', options).format(currentdate));
+    const dateAndTime = whichDay + " "
+        + currentdate.getDate() + " "
+        + whichMonth  + " "
+        + currentdate.getFullYear() + ", "
+        + currentdate.getHours() + "h"
+        + currentdate.getMinutes();
+    document.getElementById("target").innerHTML = dateAndTime;
+}
 
-})();
+getDateTime();
+
+
