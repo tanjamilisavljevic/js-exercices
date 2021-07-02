@@ -10,11 +10,22 @@
 // You will have time to focus on it later.
 
 
-const setBg = () => {
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+const changBackgroundColor = () => {
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
     document.body.style.backgroundColor = "#" + randomColor;
-    color.innerHTML = "#" + randomColor;
 }
 
-run.addEventListener("click", setBg);
-setBg();
+
+document.getElementById("run").addEventListener("click",  changBackgroundColor);
+
+
+
+
+// const setBg = () => {
+//     const randomColor = Math.floor(Math.random()*16777215).toString(16);
+//     document.body.style.backgroundColor = "#" + randomColor;
+//     color.innerHTML = "#" + randomColor;
+// }
+//
+// run.addEventListener("click", setBg);
+// setBg();
