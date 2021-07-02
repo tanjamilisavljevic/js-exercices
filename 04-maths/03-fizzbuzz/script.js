@@ -9,8 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function fizzBuzz() {
 
-    // your code here
+    const numbers = [];
 
-})();
+    for (let i = 1; i < 100; i++) {
+
+        if (i % 3 === 0 && !(i % 5 === 0)) {
+            numbers.push('fizz')
+        }
+        else if (i % 5 === 0 && !(i % 3 === 0)) {
+            numbers.push('buzz');
+        }
+        else if (i % 5 === 0 && i % 3 === 0) {
+            numbers.push('fizzbuzz');
+        }
+        else {
+            numbers.push(i)
+        }
+    }
+    console.log(numbers);
+}
+
+fizzBuzz();
+
