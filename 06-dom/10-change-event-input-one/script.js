@@ -21,7 +21,6 @@
         input.value = input.value.slice(0,10);
         }
         counter.textContent = `${input.value.length}/10`;
-
     });
 
 

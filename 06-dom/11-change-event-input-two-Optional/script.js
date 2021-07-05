@@ -9,8 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    //
+    // const hasTwoNumbers = /\d\d/;
+    //
+    // const inputElement = document.getElementById("pass-one");
+    //
+    // inputElement.addEventListener('input', (event) => {
+    //
+    //     if ((inputElement.length) >= 8 && (hasTwoNumbers.test(inputElement)===true)) {
+    //         document.getElementById('validity').innerHTML = 'OK';
+    //     }
+    //     else {
+    //     }
+    // }
+    // )
 
 })();
+
+
+
