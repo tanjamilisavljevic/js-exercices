@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var fruits = [
         "cerise",
@@ -28,5 +28,31 @@
         "cerise",
     ];
 
-    // your code here
+
+    // const unique = fruits
+    //     .map((fruit) => {
+    //         return {
+    //             count: 1,
+    //             fruit: fruit
+    //         }
+    //     })
+    //     .reduce((a, b) => {
+    //         a[b.fruit] = (a[b.fruit] || 0) + b.count
+    //         return a
+    //     }, {})
+    //
+    // const duplicates = Object.keys(unique).filter((a) => unique[a] > 1)
+    // console.log(duplicates)
+    //
+    // const fruitsWithoutDuplicates = fruits.splice( 0, fruits.length, "duplicates");
+    // console.log(fruitsWithoutDuplicates)
+
+    document.getElementById("run").addEventListener("click", function ()
+    {
+
+        let uniqueFruitsSet = new Set(fruits);
+        let uniqueFruitsArray = Array.from(uniqueFruitsSet);
+        console.log(uniqueFruitsArray);
+
+    })
 })();
