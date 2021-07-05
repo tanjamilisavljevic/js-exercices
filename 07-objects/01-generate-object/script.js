@@ -11,17 +11,34 @@
 
 (() => {
     // your code here
+    //
+const Me = new Object();
+Me.lastname = 'Milisavljevic';
+Me.firstname = 'Tanja';
+Me.age = '26';
+Me.city = 'Gent';
+Me.country = 'Belgium';
 
-    let Me;
-    Me = new Object;
-    // Me = {}
-    Me['last-name'] ='Milisavljevic';
-    Me['first-name'] = 'Tanja';
-    Me['age'] = 26;
-    Me ['city'] = 'Belgrade';
-    Me ['country'] = 'Serbia';
+document.getElementById('run').addEventListener('click', function (){
+    console.log(Me)
 
-    document.getElementById('run').addEventListener('click', function (){
-        console.log(Me);
-    })
+})
+
+
+
+
+
+
+    // let Me;
+    // Me = new Object;
+    // // Me = {}
+    // Me['last-name'] ='Milisavljevic';
+    // Me['first-name'] = 'Tanja';
+    // Me['age'] = 26;
+    // Me ['city'] = 'Belgrade';
+    // Me ['country'] = 'Serbia';
+    //
+    // document.getElementById('run').addEventListener('click', function (){
+    //     console.log(Me);
+    // })
 })();
