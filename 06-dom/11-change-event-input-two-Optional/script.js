@@ -11,20 +11,22 @@
 
 (function () {
 
-    //
-    // const hasTwoNumbers = /\d\d/;
-    //
-    // const inputElement = document.getElementById("pass-one");
-    //
-    // inputElement.addEventListener('input', (event) => {
-    //
-    //     if ((inputElement.length) >= 8 && (hasTwoNumbers.test(inputElement)===true)) {
-    //         document.getElementById('validity').innerHTML = 'OK';
-    //     }
-    //     else {
-    //     }
-    // }
-    // )
+
+    const hasTwoNumbers = /\d\d/;
+
+    const inputElement = document.getElementById("pass-one");
+
+    inputElement.addEventListener('input', (event) => {
+
+        const input = event.target.value;
+
+        if (input.length >= 8 && hasTwoNumbers.test(input)===true) {
+            document.getElementById('validity').innerHTML = 'OK';
+        }
+        else {
+        }
+    }
+    )
 
 })();
 
