@@ -15,7 +15,6 @@ function getRandom(max, min) {
 }
 
 
-
 document.getElementById("run").addEventListener("click", function () {
     allRandoms = new Array();
 
@@ -50,14 +49,12 @@ document.getElementById("run").addEventListener("click", function () {
     allRandoms.push(n10);
     document.getElementById('n-10').innerHTML = n10;
 
-
-    document.getElementById('min').innerHTML = Math.min('allRandoms');
+    document.getElementById('min').innerHTML = Math.min(...allRandoms);
+    document.getElementById('max').innerHTML = Math.max(...allRandoms);
+    let sum = allRandoms.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue
+    }, 0)
+    document.getElementById('sum').innerHTML = sum;
+    document.getElementById('average').innerHTML = sum / allRandoms.length;
 })
 
-
-
-
-//get a minimum
-//get a maximum
-//get the sum
-//get the average
