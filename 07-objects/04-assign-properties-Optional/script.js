@@ -27,4 +27,5 @@
         user: null,
     };
     // your code here
+    //make a loop for every key which checks whether theres a value assigned and assigns the defaults in case theres no value
 })();

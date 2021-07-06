@@ -25,12 +25,21 @@
         "raisin",
         "cerise",
     ];
+document.getElementById("run").addEventListener("click", function () {
+
+fruits.forEach(function (fruit){
+    console.log(fruit)
+})
+
+})
+
+
 
     // your code here
-document.getElementById('run').onclick = () => {
-    fruits.forEach(function (fruit) {
-        console.log(fruit)
-    })
-}
+// document.getElementById('run').onclick = () => {
+//     fruits.forEach(function (fruit) {
+//         console.log(fruit)
+//     })
+// }
 
 })();
