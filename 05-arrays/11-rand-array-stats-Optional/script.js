@@ -51,9 +51,7 @@ document.getElementById("run").addEventListener("click", function () {
 
     document.getElementById('min').innerHTML = Math.min(...allRandoms);
     document.getElementById('max').innerHTML = Math.max(...allRandoms);
-    let sum = allRandoms.reduce(function (accumulator, currentValue) {
-        return accumulator + currentValue
-    }, 0)
+    let sum = allRandoms.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
     document.getElementById('sum').innerHTML = sum;
     document.getElementById('average').innerHTML = sum / allRandoms.length;
 })
